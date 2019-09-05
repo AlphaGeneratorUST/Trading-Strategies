@@ -72,5 +72,3 @@ stds = np.linspace(1,3,10)
 for window in windows:
     for std in stds:
         bollinger_strat(df,window,std)
-
-
