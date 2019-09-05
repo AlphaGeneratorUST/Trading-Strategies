@@ -62,7 +62,7 @@ def bollinger_strat(df, window, std):
     df['Market Return'] = np.log(df['Settle']/df['Settle'].shift(1))
     df['Strategy Return'] = df['Market Return'] * df['Position']
 
-    df['Strategy Retun'].sumsum().plot()
+    df['Strategy Retun'].cumsum().plot()
 
 #Set up "daily look back period" and "number of standard deviation" vectors
 windows = np.linspace(10,100,20,dtype=int)
